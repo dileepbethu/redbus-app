@@ -1,0 +1,31 @@
+
+.seat-btn {
+    width: 60px;
+    height: 45px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .seat-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+  }
+  
+  .btn-outline-primary {
+    border: 2px solid #007bff;
+    background-color: white;
+    color: #007bff;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,265 @@
+/* Banner Section */
+.banner-container {
+  background: url('/banner.jpg') center center/cover no-repeat;
+  background-size:cover;
+  min-height: 60vh;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* Add overlay for better text readability */
+.banner-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.banner-overlay-content {
+  z-index: 2;
+  padding: 2rem;
+  position: relative;
+}
+
+.banner-overlay-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-overlay-content p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Form */
+.search-form {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: none;
+  position: relative;
+  z-index: 3;
+}
+
+/* Trending Offers */
+.trending-offers-wrapper {
+  z-index: 3;
+  margin-bottom: -105px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.trending-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 9px;
+}
+
+.trending-scroll {
+  gap: 15px;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.trending-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-card {
+  min-width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.offer-card small {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.OfferCard__OfferCode-sc-1f27jzb-11 {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.OfferCard__OfferCopyIcon-sc-1f27jzb-12 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.OfferCard__OfferCopyIcon-sc-1f27jzb-12:hover {
+  opacity: 1;
+}
+
+/* Government Buses */
+.government-offers-wrapper {
+  padding: 0 20px;
+  margin-top: 90px;
+}
+
+.government-box {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.government-scroll {
+  gap: 20px;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.government-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.government-scroll .offer-card {
+  min-width: 300px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+}
+
+.government-scroll .offer-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.government-scroll .card-title {
+  color: #333;
+  font-size: 18px;
+}
+
+.government-scroll .card-subtitle {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.government-scroll .card-text {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-btn:hover {
+  background: var(--redbus-primary);
+  color: white;
+  border-color: var(--redbus-primary);
+  box-shadow: 0 4px 12px rgba(216, 78, 85, 0.3);
+}
+
+.scroll-btn.left {
+  left: -20px;
+}
+
+.scroll-btn.right {
+  right: -20px;
+}
+
+.scroll-btn i {
+  font-size: 16px;
+}
+
+/* Footer hover effects */
+.hover-opacity:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-overlay-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .banner-overlay-content p {
+    font-size: 1rem;
+  }
+  
+  .trending-offers-wrapper,
+  .government-offers-wrapper {
+    padding: 0 10px;
+  }
+  
+  .offer-card {
+    min-width: 250px;
+  }
+  
+  .government-scroll .offer-card {
+    min-width: 280px;
+  }
+  
+  .scroll-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-container {
+    min-height: 80vh;
+  }
+  
+  .offer-card {
+    min-width: 220px;
+    padding: 15px;
+  }
+  
+  .government-scroll .offer-card {
+    min-width: 250px;
+  }
+}
