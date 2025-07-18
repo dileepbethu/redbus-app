@@ -9,5 +9,20 @@
     "not ios_saf <= 18.2",
     "not safari <= 18.2",
     "not samsung <= 27"
-  ]
+  ],
+  "hints": {
+    "meta-viewport": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ]
+  }
 }
