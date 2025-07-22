@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Must match your GitHub repo name exactly
+  base: '/redbus-app/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
