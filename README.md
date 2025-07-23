@@ -23,6 +23,11 @@ A full-stack bus ticket booking platform inspired by RedBus, featuring user auth
 - 🖨️ Downloadable/Printable Ticket
 - 🔒 AuthContext for Global State Management
 - 🌐 Responsive UI with Bootstrap
+### 📸 Screenshots
+![alt text](<Screenshot 2025-07-22 161333.png>)
+![alt text](<Screenshot 2025-07-23 120736.png>)
+![alt text](<Screenshot 2025-07-23 120419.png>)
+![alt text](<Screenshot 2025-07-22 161357.png>)
 ## live DEMO
 https://moonlit-kringle-d7ae4e.netlify.app/
 
@@ -84,12 +89,6 @@ npm run dev
 App runs at: http://localhost:5000 (Vite frontend)
 API runs at: http://localhost:5001 or your backend port
 
-### 📸 Screenshots
-![alt text](<Screenshot 2025-05-23 150509.png>)
-![alt text](<Screenshot 2025-05-23 150520.png>)
-![alt text](<Screenshot 2025-05-23 150616.png>)
-![alt text](<Screenshot 2025-05-23 150629.png>)
-![alt text](image.png)
 
 ### 📌 Future Enhancements
 - Payment gateway integration
